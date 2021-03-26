@@ -1,0 +1,29 @@
+name: currency_converter
+description: This is a new currency conveter.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  http: ^0.13.1
+  bottom_navy_bar: ^5.6.0
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/resources/img/America.jpg
+    - lib/resources/img/EuropeanUnion.png
+    - lib/resources/img/Japan.jpg
+    - lib/resources/img/Argentina.jpg
+    - lib/resources/img/up-arrow.png
