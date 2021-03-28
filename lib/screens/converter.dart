@@ -30,7 +30,7 @@ class _Converter extends State<Converter> {
                 child: Theme(
                   data: ThemeData(splashColor: Colors.transparent),
                   child: TextFormField(
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
                     onChanged: (value) {
                       setState(() {
                         calculate.convert(double.parse(value));

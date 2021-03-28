@@ -1,9 +1,10 @@
+
 # Welcome to Brazilian Currency Converter
 
 
-### Project Statuses
+### Project status
 
-![Badge](https://img.shields.io/static/v1?label=Flutter&message=framework&color=blue&style=for-the-badge&logo=FLUTTER)   ![Badge](https://img.shields.io/static/v1?label=dart&message=Language&color=blue&style=for-the-badge&logo=DART) ![Badge](https://img.shields.io/static/v1?label=Project_Stage&message=completed&color=sucess&style=for-the-badge)![Badge](https://img.shields.io/static/v1?label=API_Integration&message=HG_FINANCE&color=sucess&style=for-the-badge) 
+![Badge](https://img.shields.io/static/v1?label=Framework&message=Flutter&color=blue&style=for-the-badge&logo=FLUTTER)   ![Badge](https://img.shields.io/static/v1?label=Language&message=dart&color=blue&style=for-the-badge&logo=DART) ![Badge](https://img.shields.io/static/v1?label=Project_Stage&message=complete&color=sucess&style=for-the-badge) ![Badge](https://img.shields.io/static/v1?label=API_Integration&message=HG_FINANCE&color=sucess&style=for-the-badge) 
 
 ### Index
 
@@ -14,14 +15,13 @@
 
 ### 1. Abstract <a name="Abstract"/>
 
-The project objectives: **(I)** Build a simple multiplataform (Android and IOS) mobile software solution, using Flutter framework and Dart programming language, capable to convert Brazilian currency (Reais - R$) to: American Dollars (USD), Argentine Pesos ($), Japanese Yen (¥) and European Union Euro (€). **(II)** Introduce the most recent Stock variation of four main stocks exchanges, be this positive or negative values: IBOVESPA, NASDAQ, CAC and NIKKEI. **(III)** Increment my Git Hub portfolio. Showing the most current conversions, maid methodology to monetary conversions was used integration with Application Programming Interface (API) HG Finance, one enterprise that makes available some free financial market data. The data consume use JSON format. The API consumption modality follows the guidelines and limitations of free plan, to you be able try this app independent of API key. You should no use this data to make any decisions in real life.
+That project aims: **(I)** Build a simple multiplataform (Android and IOS) mobile software solution, using Flutter framework and Dart programming language, capable to convert Brazilian currency (Reais - R$) to: American Dollars (USD), Argentine Pesos ($), Japanese Yen (¥) and European Union Euro (€). **(II)** Introduce the most recent Stock variation of four main stocks exchanges, be this positive or negative values: IBOVESPA, NASDAQ, CAC and NIKKEI. **(III)** Apply object-oriented concepts in solving a real problem. Showing the most current conversions, maid methodology to monetary conversions was used integration with Application Programming Interface (API) HG Finance, one enterprise that makes available some free financial market data. The data consume use JSON format. The API consumption modality follows the guidelines and limitations of free plan, to you be able try this app independent of API key. You should no use this data to make any decisions in real life.
 
 **Key-Words**: Flutter framework; Dart Lang; API Finance; Dynamic Data;
  
 ### 2. Layout <a name="Layout"/>
-You can see app layout using just a click in the video below
-
-[![Watch the video](https://drive.google.com/uc?id=1UCCSnmnQTJt0r45IGPJXqLjXmW-N2etL)](https://youtu.be/-51u-Sodcm8)
+You can see app layout below
+![Alt Text](https://drive.google.com/uc?id=1JqabIc6SCmuz2bb55RMPWcSqzDXLezlV =219x400)
 
 ### 4. Dependencies or libraries <a name="Dependencies"/>
 

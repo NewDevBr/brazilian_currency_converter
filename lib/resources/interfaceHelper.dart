@@ -57,7 +57,12 @@ class GuiHelper {
 
   makeBottomNavigatorBarItem(String text, IconData icon) {
     return BottomNavyBarItem(
-        title: Text(text), icon: Icon(icon), activeColor: Colors.green[900]);
+        title: Text(
+          text,
+          style: TextStyle(fontSize: 18),
+        ),
+        icon: Icon(icon),
+        activeColor: Colors.green[900]);
   }
 
   rotateDeterminer(double value) {
