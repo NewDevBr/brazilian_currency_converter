@@ -21,7 +21,7 @@ That project aims: **(I)** Build a simple multiplataform (Android and IOS) mobil
  
 ### 2. Layout <a name="Layout"/>
 You can see app layout below
-![Alt Text](https://drive.google.com/uc?id=1JqabIc6SCmuz2bb55RMPWcSqzDXLezlV =219x400)
+![](https://drive.google.com/uc?id=1JqabIc6SCmuz2bb55RMPWcSqzDXLezlV=219x400)
 
 ### 4. Dependencies or libraries <a name="Dependencies"/>
 
