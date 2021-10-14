@@ -32,9 +32,7 @@ class _Converter extends State<Converter> {
                   child: TextFormField(
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
                     onChanged: (value) {
-                      setState(() {
-                        calculate.convert(double.parse(value));
-                      });
+                      setState(() => calculate.convert(value));
                     },
                     controller: realValue,
                     keyboardType:

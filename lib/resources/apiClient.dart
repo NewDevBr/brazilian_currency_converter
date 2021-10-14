@@ -13,7 +13,7 @@ class ApiClient {
   get yen => _data["results"]["currencies"]["JPY"]["buy"];
   get stocks => _data["results"]["stocks"];
 
-  requestDataToServer() async {
+  loadCurrentCurrenciesValues() async {
     if (_data == null) {
       _data = await http.get(Uri.parse(_apiLink));
       _data = json.decode(data.body);

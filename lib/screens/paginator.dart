@@ -11,7 +11,7 @@ class Paginator extends StatefulWidget {
 }
 
 class _Paginator extends State<Paginator> {
-  final List<Widget> listOfPages = [
+  final List<Widget> pageList = [
     Converter(),
     Stocks(),
     Information(),
@@ -22,13 +22,11 @@ class _Paginator extends State<Paginator> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.green[900],
-      body: listOfPages[_index],
+      body: pageList[_index],
       bottomNavigationBar: BottomNavyBar(
         selectedIndex: _index,
         showElevation: true,
-        onItemSelected: (index) {
-          setState(() => _index = index);
-        },
+        onItemSelected: (index) => setState(() => _index = index),
         items: <BottomNavyBarItem>[
           guiHelper.makeBottomNavigatorBarItem(
               "Converter", Icons.monetization_on),

@@ -37,7 +37,7 @@ class _Splash extends State<Splash> {
   @override
   void didChangeDependencies() {
     Future.delayed(Duration(seconds: 2)).then((event) {
-      Navigator.pushReplacementNamed(context, "/dashboard");
+      Navigator.pushReplacementNamed(context, "/paginator");
     });
     super.didChangeDependencies();
   }

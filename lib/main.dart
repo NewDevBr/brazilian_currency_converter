@@ -11,13 +11,14 @@ class CurrentConverter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        localizationsDelegates: [GlobalMaterialLocalizations.delegate],
-        supportedLocales: [const Locale('pt', 'BR')],
-        initialRoute: '/splash',
-        routes: {
-          '/splash': (BuildContext context) => Splash(),
-          '/dashboard': (BuildContext context) => Paginator(),
-        });
+      debugShowCheckedModeBanner: false,
+      localizationsDelegates: [GlobalMaterialLocalizations.delegate],
+      supportedLocales: [const Locale('pt', 'BR')],
+      initialRoute: '/splash',
+      routes: {
+        '/splash': (BuildContext context) => Splash(),
+        '/paginator': (BuildContext context) => Paginator(),
+      },
+    );
   }
 }

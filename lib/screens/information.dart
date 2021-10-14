@@ -14,28 +14,29 @@ class _Information extends State<Information> {
     return ListView(
       children: [
         Padding(
-            padding: EdgeInsets.all(20),
-            child: Column(
-              children: [
-                guiHelper.makeSpace(25),
-                guiHelper.makeText("Info & Terms", 50,
-                    bold: true, align: Alignment.topLeft),
-                guiHelper.makeText("How can you see data?", 24,
-                    align: Alignment.topLeft),
-                guiHelper.makeSpace(85),
-                guiHelper.makeText("API: http://api.hgbrasil.com/finance", 18,
-                    bold: true),
-                guiHelper.makeSpace(20),
-                Text(
-                  text,
-                  textAlign: TextAlign.justify,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
-                  ),
-                )
-              ],
-            ))
+          padding: EdgeInsets.all(20),
+          child: Column(
+            children: [
+              guiHelper.makeSpace(25),
+              guiHelper.makeText("Info & Terms", 50,
+                  bold: true, align: Alignment.topLeft),
+              guiHelper.makeText("How can you see data?", 24,
+                  align: Alignment.topLeft),
+              guiHelper.makeSpace(85),
+              guiHelper.makeText("API: http://api.hgbrasil.com/finance", 18,
+                  bold: true),
+              guiHelper.makeSpace(20),
+              Text(
+                text,
+                textAlign: TextAlign.justify,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 18,
+                ),
+              )
+            ],
+          ),
+        )
       ],
     );
   }

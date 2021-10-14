@@ -2,28 +2,37 @@ import 'package:currency_converter/resources/apiClient.dart';
 
 ApiClient api = ApiClient();
 
-Map model = {"USD": "0", "EUR": "0", "YEN": "0", "poundsArgentine": "0"};
-
 class Calculate {
-  Calculate() {
-    api.requestDataToServer();
-  }
-  Map convertedValue = model;
+  Map convertedValue;
+
   get stocksValues => api.stocks;
 
-  convert(double valueInReais) {
-    if (valueInReais > 0) {
-      convertedValue = {
-        "USD": (valueInReais / api.dolar).toStringAsPrecision(7),
-        "EUR": (valueInReais / api.euro).toStringAsPrecision(7),
-        "YEN": (valueInReais / api.yen).toStringAsPrecision(7),
-        "poundsArgentine":
-            (valueInReais / api.poundsArgentine).toStringAsPrecision(7)
-      };
-    } else {
-      convertedValue = model;
-    }
+  get getModelEmpty =>
+      {"USD": "0.00", "EUR": "0.00", "YEN": "0.00", "poundsArgentine": "0.00"};
+
+  Calculate() {
+    api.loadCurrentCurrenciesValues();
+    this.convertedValue = getModelEmpty;
   }
 
-  depositAccountIncome() {}
+  convert(dynamic brazilianCurrencyValue) {
+    try {
+      brazilianCurrencyValue = double.parse(brazilianCurrencyValue);
+      brazilianCurrencyValue > 0
+          ? this.convertedValue = {
+              "USD": (brazilianCurrencyValue / api.dolar).toStringAsFixed(2),
+              "EUR": (brazilianCurrencyValue / api.euro).toStringAsFixed(2),
+              "YEN": (brazilianCurrencyValue / api.yen).toStringAsFixed(2),
+              "poundsArgentine": (brazilianCurrencyValue / api.poundsArgentine)
+                  .toStringAsFixed(2)
+            }
+          : this.convertedValue = getModelEmpty;
+    } on FormatException {
+      print('Error trying convert value to double, please type a valid double');
+      this.convertedValue = getModelEmpty;
+    } on Exception catch (_) {
+      this.convertedValue = getModelEmpty;
+      print('Default exception was called');
+    }
+  }
 }

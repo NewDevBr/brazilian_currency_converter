@@ -5,12 +5,16 @@ class GuiHelper {
   makeText(String text, int size,
       {bool bold = false, Alignment align = Alignment.center}) {
     return Align(
-        alignment: align,
-        child: Text(text,
-            style: TextStyle(
-                color: Colors.white,
-                fontSize: size.toDouble(),
-                fontWeight: bold ? FontWeight.bold : FontWeight.normal)));
+      alignment: align,
+      child: Text(
+        text,
+        style: TextStyle(
+          color: Colors.white,
+          fontSize: size.toDouble(),
+          fontWeight: bold ? FontWeight.bold : FontWeight.normal,
+        ),
+      ),
+    );
   }
 
   makeSpace(double espace) {
@@ -19,50 +23,55 @@ class GuiHelper {
 
   makeSotckDataRow(String info, double variation) {
     return Padding(
-        padding: EdgeInsets.only(bottom: 22),
-        child: Row(
-          children: [
-            RotatedBox(
-                quarterTurns: variation < 0 ? 2 : 0,
-                child: Image(
-                    image: AssetImage("lib/resources/img/up-arrow.png"),
-                    color: variation < 0 ? Colors.red : Colors.green[300])),
-            Padding(padding: EdgeInsets.only(right: 15)),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                makeText(info, 18, bold: true),
-                Text(
-                  'Variation: ' + variation.toString(),
-                  style: TextStyle(fontSize: 17, color: Colors.white),
-                  textAlign: TextAlign.left,
-                )
-              ],
-            )
-          ],
-        ));
+      padding: EdgeInsets.only(bottom: 22),
+      child: Row(
+        children: [
+          RotatedBox(
+            quarterTurns: variation < 0 ? 2 : 0,
+            child: Image(
+              image: AssetImage("lib/resources/img/up-arrow.png"),
+              color: variation < 0 ? Colors.red : Colors.green[300],
+            ),
+          ),
+          Padding(padding: EdgeInsets.only(right: 15)),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              makeText(info, 18, bold: true),
+              Text(
+                'Variation: ' + variation.toString(),
+                style: TextStyle(fontSize: 17, color: Colors.white),
+                textAlign: TextAlign.left,
+              )
+            ],
+          )
+        ],
+      ),
+    );
   }
 
   makeConvertedDataRow(String img, String text) {
     return Padding(
-        padding: EdgeInsets.only(bottom: 22),
-        child: Row(
-          children: [
-            Image(image: AssetImage(img)),
-            Padding(padding: EdgeInsets.only(right: 15)),
-            makeText(text, 22)
-          ],
-        ));
+      padding: EdgeInsets.only(bottom: 22),
+      child: Row(
+        children: [
+          Image(image: AssetImage(img)),
+          Padding(padding: EdgeInsets.only(right: 15)),
+          makeText(text, 22)
+        ],
+      ),
+    );
   }
 
   makeBottomNavigatorBarItem(String text, IconData icon) {
     return BottomNavyBarItem(
-        title: Text(
-          text,
-          style: TextStyle(fontSize: 18),
-        ),
-        icon: Icon(icon),
-        activeColor: Colors.green[900]);
+      title: Text(
+        text,
+        style: TextStyle(fontSize: 18),
+      ),
+      icon: Icon(icon),
+      activeColor: Colors.green[900],
+    );
   }
 
   rotateDeterminer(double value) {
