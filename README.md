@@ -21,7 +21,12 @@ That project aims: **(I)** Build a simple multiplataform (Android and IOS) mobil
  
 ### 2. Layout <a name="Layout"/>
 You can see app layout below
-[![Watch the video](https://drive.google.com/uc?id=1UCCSnmnQTJt0r45IGPJXqLjXmW-N2etL)](https://youtu.be/-51u-Sodcm8)
+
+<img src="/lib/resources/img/flutter_01.png">
+<img src="/lib/resources/img/flutter_02.png">
+<img src="/lib/resources/img/flutter_03.png">
+<img src="/lib/resources/img/flutter_04.png">
+<img src="/lib/resources/img/flutter_05.png">
 
 ### 4. Dependencies or libraries <a name="Dependencies"/>
 
