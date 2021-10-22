@@ -22,6 +22,7 @@ That project aims: **(I)** Build a simple multiplataform (Android and IOS) mobil
 ### 2. Layout <a name="Layout"/>
 You can see app layout below
 
+<img src="/lib/resources/img/flutter_00.png" height="510" width="240">
 <img src="/lib/resources/img/flutter_01.png" height="510" width="240">
 <img src="/lib/resources/img/flutter_02.png" height="510" width="240">
 <img src="/lib/resources/img/flutter_03.png" height="510" width="240">
